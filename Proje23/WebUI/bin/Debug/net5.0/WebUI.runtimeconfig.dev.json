@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\DeepBlue\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\DeepBlue\\.nuget\\packages"
+    ]
+  }
+}

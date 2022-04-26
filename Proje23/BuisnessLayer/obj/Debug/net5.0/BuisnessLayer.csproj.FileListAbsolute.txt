@@ -1,0 +1,17 @@
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\bin\Debug\net5.0\BuisnessLayer.deps.json
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\bin\Debug\net5.0\BuisnessLayer.dll
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\bin\Debug\net5.0\ref\BuisnessLayer.dll
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\bin\Debug\net5.0\BuisnessLayer.pdb
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\bin\Debug\net5.0\DAL.dll
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\bin\Debug\net5.0\Entities.dll
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\bin\Debug\net5.0\DAL.pdb
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\bin\Debug\net5.0\Entities.pdb
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\BuisnessLayer.csproj.AssemblyReference.cache
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\BuisnessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\BuisnessLayer.AssemblyInfoInputs.cache
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\BuisnessLayer.AssemblyInfo.cs
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\BuisnessLayer.csproj.CoreCompileInputs.cache
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\BuisnessLayer.csproj.CopyComplete
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\BuisnessLayer.dll
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\ref\BuisnessLayer.dll
+C:\Users\DeepBlue\source\repos\Proje23\BuisnessLayer\obj\Debug\net5.0\BuisnessLayer.pdb

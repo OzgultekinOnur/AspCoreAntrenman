@@ -1,0 +1,30 @@
+﻿@model TextModel
+@{
+    ViewData["Title"] = "Sinavlarım";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Sinavlarım</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Kullanıcı</th>
+            <th scope="col">Sınav Başlığı</th>
+            <th scope="col">Tarihi</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.Sinavlar)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@ViewBag.user</td>
+                <td>@item.Text</td>
+                <td>@item.Date</td>
+                <td><form method="post" action="/Home/SinavSil"><input type="submit" class="btn btn-danger" name="@item.Id" value="Sil" /></form></td>
+            </tr>
+        }
+    </tbody>
+</table>

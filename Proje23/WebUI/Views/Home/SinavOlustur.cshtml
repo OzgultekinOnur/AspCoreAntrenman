@@ -1,0 +1,240 @@
+﻿@model TextModel
+@{
+    ViewData["Title"] = "SinavOlustur";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class=" d-flex justify-content-center mt-4">
+    <form asp-action="SinavOlustur">
+        <div class="form-group">
+            <label asp-for="Basliklar" class="control-label"> </label>
+            <select id="select1" asp-for="Basliklar">
+                @foreach (var item in Model.Basliklar)
+                {
+                    <option>@item</option>
+                }
+            </select>
+        </div>
+        <div>
+            <input type="submit" class="btn btn-lg" value="Konuyu Seç" />
+        </div>
+    </form>
+</div>
+<div class="row mt-5">
+    <div class="col-md-12">
+        <form action="">
+            <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>
+                    @Model.GeriDonenMetin
+                </textarea>
+            </div>
+        </form>
+    </div>
+</div>
+
+<form action="/Home/Olustur" method="post">
+    <div>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <label for="">Soru-1</label>
+                <input class="form-control" type="text" placeholder="Question" asp-for="Sinav.Question1">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-6">
+                <label for="">A)</label>
+                <input class="form-control" type="text" placeholder="Answer A" asp-for="Sinav.Question1Answers1">
+            </div>
+            <div class="col-md-6">
+                <label for="">B)</label>
+                <input class="form-control" type="text" placeholder="Answer B" asp-for="Sinav.Question1Answers2">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-6">
+                <label for="">C)</label>
+                <input class="form-control" type="text" placeholder="Answer C" asp-for="Sinav.Question1Answers3">
+            </div>
+            <div class="col-md-6">
+                <label for="">D)</label>
+                <input class="form-control" type="text" placeholder="Answer D" asp-for="Sinav.Question1Answers4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label for="" class="mt-3">Doğru Cevap</label>
+                <div class=" d-flex justify-content-center ">
+                    <select asp-for="Sinav.Q1Correct1">
+                        <option>
+                            A
+                        </option>
+                        <option>
+                            B
+                        </option>
+                        <option>
+                            C
+                        </option>
+                        <option>
+                            D
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>  @* Soru1 *@
+    <div>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <label for="">Soru-1</label>
+                <input class="form-control" type="text" placeholder="Question" asp-for="Sinav.Question2">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-6">
+                <label for="">A)</label>
+                <input class="form-control" type="text" placeholder="Answer A" asp-for="Sinav.Question2Answers1">
+            </div>
+            <div class="col-md-6">
+                <label for="">B)</label>
+                <input class="form-control" type="text" placeholder="Answer B" asp-for="Sinav.Question2Answers2">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-6">
+                <label for="">C)</label>
+                <input class="form-control" type="text" placeholder="Answer C" asp-for="Sinav.Question2Answers3">
+            </div>
+            <div class="col-md-6">
+                <label for="">D)</label>
+                <input class="form-control" type="text" placeholder="Answer D" asp-for="Sinav.Question2Answers4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label for="" class="mt-3">Doğru Cevap</label>
+                <div class=" d-flex justify-content-center ">
+                    <select asp-for="Sinav.Q2Correct2">
+                        <option>
+                            A
+                        </option>
+                        <option>
+                            B
+                        </option>
+                        <option>
+                            C
+                        </option>
+                        <option>
+                            D
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>  @* Soru2 *@
+    <div>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <label for="">Soru-1</label>
+                <input class="form-control" type="text" placeholder="Question" asp-for="Sinav.Question3">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-6">
+                <label for="">A)</label>
+                <input class="form-control" type="text" placeholder="Answer A" asp-for="Sinav.Question3Answers1">
+            </div>
+            <div class="col-md-6">
+                <label for="">B)</label>
+                <input class="form-control" type="text" placeholder="Answer B" asp-for="Sinav.Question3Answers2">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-6">
+                <label for="">C)</label>
+                <input class="form-control" type="text" placeholder="Answer C" asp-for="Sinav.Question3Answers3">
+            </div>
+            <div class="col-md-6">
+                <label for="">D)</label>
+                <input class="form-control" type="text" placeholder="Answer D" asp-for="Sinav.Question3Answers4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label for="" class="mt-3">Doğru Cevap</label>
+                <div class=" d-flex justify-content-center ">
+                    <select asp-for="Sinav.Q3Correct3">
+                        <option>
+                            A
+                        </option>
+                        <option>
+                            B
+                        </option>
+                        <option>
+                            C
+                        </option>
+                        <option>
+                            D
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>  @* Soru3 *@
+    <div>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <label for="">Soru-1</label>
+                <input class="form-control" type="text" placeholder="Question" asp-for="Sinav.Question4">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-6">
+                <label for="">A)</label>
+                <input class="form-control" type="text" placeholder="Answer A" asp-for="Sinav.Question4Answers1">
+            </div>
+            <div class="col-md-6">
+                <label for="">B)</label>
+                <input class="form-control" type="text" placeholder="Answer B" asp-for="Sinav.Question4Answers2">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-6">
+                <label for="">C)</label>
+                <input class="form-control" type="text" placeholder="Answer C" asp-for="Sinav.Question4Answers3">
+            </div>
+            <div class="col-md-6">
+                <label for="">D)</label>
+                <input class="form-control" type="text" placeholder="Answer D" asp-for="Sinav.Question4Answers4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label for="" class="mt-3">Doğru Cevap</label>
+                <div class=" d-flex justify-content-center ">
+                    <select asp-for="Sinav.Q4Correct4">
+                        <option>
+                            A
+                        </option>
+                        <option>
+                            B
+                        </option>
+                        <option>
+                            C
+                        </option>
+                        <option>
+                            D
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>  @* Soru3 *@
+    <!-- Sınav Oluştur buttonnu -->
+    <div class="row">
+        <div class="col-md-2 mt-5">
+            <div class=" d-flex justify-content-center ">
+                <button type="submit" class="btn btn-success btn-lg">Sınavı Oluştur</button>
+            </div>
+        </div>
+    </div>
+</form>

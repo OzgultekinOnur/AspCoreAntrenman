@@ -1,0 +1,151 @@
+﻿@model TextModel
+@{
+    ViewData["Title"] = "SinavEkrani";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="  justify-content-center mt-4">
+
+    <h4 class="border blockquote text-center p-4 "> @Model.Sinav.Text</h4>
+</div>
+<div class="row mt-3">
+    <div class="col-md-12">
+        <h5 class="border blockquote text-center p-4 "> @Model.Sinav.Text2</h5>
+    </div>
+</div>
+<form asp-controller="Home" asp-action="Sonuc">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <p class="border blockquote text-center p-4 ">
+                @Model.Sinav.Question1
+            </p>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 ">
+            <input type="radio" class="btn-check btn-block" name="options" id="option1" value="b11" />
+            <label class="btn border btn-block" id="b11" for="option1">@Model.Sinav.Question1Answers1.ToString()</label>
+        </div>
+        <div class="col-md-6">
+            <input type="radio" class="btn-check btn-block" name="options" id="option2" value="b12" />
+            <label class="btn border btn-block" id="b12" for="option2">@Model.Sinav.Question1Answers2.ToString()</label>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 ">
+            <input type="radio" class="btn-check btn-block" name="options" id="option3" value="b13" />
+            <label class="btn border btn-block " id="b13" for="option3">@Model.Sinav.Question1Answers3.ToString()</label>
+        </div>
+        <div class="col-md-6">
+            <input type="radio" class="btn-check " name="options" id="option4" value="b14" />
+            <label class="btn border btn-block" id="b14" for="option4">@Model.Sinav.Question1Answers4.ToString()</label>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <p class="border blockquote text-center p-4 ">
+                @Model.Sinav.Question2
+            </p>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 ">
+            <input type="radio" class="btn-check btn-block" name="options1" id="option5" value="b21" />
+            <label class="btn border btn-block" id="b21" for="option5">@Model.Sinav.Question2Answers1.ToString()</label>
+        </div>
+        <div class="col-md-6">
+            <input type="radio" class="btn-check btn-block" name="options1" id="option6" value="b22" />
+            <label class="btn border btn-block" id="b22" for="option6">@Model.Sinav.Question2Answers2.ToString()</label>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 ">
+            <input type="radio" class="btn-check btn-block" name="options1" id="option7" value="b23" />
+            <label class="btn border btn-block " id="b23" for="option7">@Model.Sinav.Question2Answers3.ToString()</label>
+        </div>
+        <div class="col-md-6">
+            <input type="radio" class="btn-check " name="options1" id="option8" value="b24" />
+            <label class="btn border btn-block" id="b24" for="option8">@Model.Sinav.Question2Answers4.ToString()</label>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <p class="border blockquote text-center p-4 ">
+                @Model.Sinav.Question1
+            </p>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 ">
+            <input type="radio" class="btn-check btn-block" name="options2" id="option9" value="b31" />
+            <label class="btn border btn-block" id="b31" for="option9">@Model.Sinav.Question3Answers1.ToString()</label>
+        </div>
+        <div class="col-md-6">
+            <input type="radio" class="btn-check btn-block" name="options2" id="option10" value="b32" />
+            <label class="btn border btn-block" id="b32" for="option10">@Model.Sinav.Question3Answers2.ToString()</label>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 ">
+            <input type="radio" class="btn-check btn-block" name="options2" id="option11" value="b33" />
+            <label class="btn border btn-block " id="b33" for="option11">@Model.Sinav.Question3Answers3.ToString()</label>
+        </div>
+        <div class="col-md-6">
+            <input type="radio" class="btn-check " name="options2" id="option12" value="b34" />
+            <label class="btn border btn-block" id="b34" for="option12">@Model.Sinav.Question3Answers4.ToString()</label>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <p class="border blockquote text-center p-4 ">
+                @Model.Sinav.Question4
+            </p>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 ">
+            <input type="radio" class="btn-check btn-block" name="options3" id="option13" value="b41" />
+            <label class="btn border btn-block" id="b41" for="option13">@Model.Sinav.Question4Answers1.ToString()</label>
+        </div>
+        <div class="col-md-6">
+            <input type="radio" class="btn-check btn-block" name="options3" id="option14" value="b42" />
+            <label class="btn border btn-block" id="b42" for="option14">@Model.Sinav.Question4Answers2.ToString()</label>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-6 ">
+            <input type="radio" class="btn-check btn-block" name="options3" id="option15" value="b43" />
+            <label class="btn border btn-block " id="b43" for="option15">@Model.Sinav.Question4Answers3.ToString()</label>
+        </div>
+        <div class="col-md-6">
+            <input type="radio" class="btn-check " name="options3" id="option16" value="b44" />
+            <label class="btn border btn-block" id="b44" for="option16">@Model.Sinav.Question4Answers4.ToString()</label>
+        </div>
+    </div>
+    <button id="gonder">GÖNDER</button>
+</form>
+
+<script>
+    document.getElementById('@Model.Kirmizi1').style.backgroundColor = 'red';
+</script>
+<script>
+    document.getElementById('@Model.Yesil1').style.backgroundColor = 'green';
+</script>
+<script>
+    document.getElementById('@Model.Yesil2').style.backgroundColor = 'green';
+</script>
+<script>
+    document.getElementById('@Model.Kirmizi2').style.backgroundColor = 'red';
+</script>
+<script>
+    document.getElementById('@Model.Yesil3').style.backgroundColor = 'green';
+</script>
+<script>
+    document.getElementById('@Model.Kirmizi3').style.backgroundColor = 'red';
+</script>
+<script>
+    document.getElementById('@Model.Yesil4').style.backgroundColor = 'green';
+</script>
+<script>
+    document.getElementById('@Model.Kirmizi4').style.backgroundColor = 'red';
+</script>
