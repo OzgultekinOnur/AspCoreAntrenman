@@ -59,7 +59,7 @@ namespace WebUI
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Login}/{action=UserLogin}/{id?}");
+                    pattern: "{controller=NewLogin}/{action=Index}/{id?}");
             });
         }
     }

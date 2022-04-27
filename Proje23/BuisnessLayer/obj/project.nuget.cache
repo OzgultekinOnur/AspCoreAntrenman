@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4W5pXLUY/7yw9i/OxpzBGpZiiR+ye4Vno25AfXHNV6S5XDPiK7J6LxkqQbQ1W760Xp/ZMh+nBWGmF/Y/eLHVGg==",
+  "dgSpecHash": "HsyedYgMM2Lo27OiORTKG5VpXgztwqt4ACXtjSMmaJd14hSXuQLy5bQLUcgdoVSDy3RShuyc0VfpNY1W0GYnQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\BuisnessLayer\\BuisnessLayer.csproj",
+  "projectFilePath": "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\BuisnessLayer\\BuisnessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DeepBlue\\.nuget\\packages\\htmlagilitypack\\1.11.42\\htmlagilitypack.1.11.42.nupkg.sha512",
     "C:\\Users\\DeepBlue\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

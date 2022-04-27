@@ -61,7 +61,7 @@ namespace WebUI.Controllers
         public IActionResult Quit()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("UserLogin", "Login");
+            return RedirectToAction("Index", "NewLogin");
         }
     }
 }

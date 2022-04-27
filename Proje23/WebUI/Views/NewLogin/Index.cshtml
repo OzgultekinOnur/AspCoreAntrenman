@@ -1,0 +1,88 @@
+﻿@using Microsoft.AspNetCore.Http;
+@model Entities.Concrete.UserModel
+@{
+    Layout = null;
+}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!--author:starttemplate-->
+<!--reference site : starttemplate.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+          content="unique login form,leamug login form,boostrap login form,responsive login form,free css html login form,download login form">
+    <meta name="author" content="leamug">
+    <title>Unique Login Form | Bootstrap Templates</title>
+    <link href="/css/style.css" rel="stylesheet" id="style">
+    <!-- Bootstrap core Library -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="mt-5 row">
+            <div class=" col-md-6 text-center">
+                <div class="row">
+                    <div class="col-md-12"><img src="/img/Logox.png" alt="" class="w-50"></div>
+                    <div class="col-md-12">
+                        <h1 class='text-white'>Konuşarak Öğren</h1>
+                    </div>
+                </div>
+                <form action="/Login/UserLogin" method="post">
+                    <div class="form-login">
+                        </br>
+                        <h2>Login</h2>
+                        </br>
+                        <input type="text" id="userName" class="form-control input- chat-input" placeholder="Username"
+                               asp-for="Username" />
+                        </br></br>
+                        <input type="password" id="userPassword" class="form-control input-md chat-input"
+                               placeholder="Password" asp-for="Password" />
+                        </br></br>
+                        <div class="wrapper">
+                            <span class="group-btn">
+                                <button class="btn btn-primary btn-lg" type="submit">
+                                    Giriş Yap <i class="fa fa-sign-in"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <div><a class="btn btn-lg text-light" asp-controller="Login" asp-action="UserSignUp"> SignUp</a></div>
+            </div>
+        </div>
+        <div class="mt-5 row">
+            <div class=" col-md-6 text-center">
+                <div class="footer text-white text-center">
+                    <p>
+                        © 2020 Unique Login Form. All rights reserved | Design by <a href="https://freecss.tech">
+                            Free
+                            Css
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class=" col-md-6 text-center"></div>
+        </div>
+        </br></br></br>
+
+        <!--footer-->
+        <!--//footer-->
+    </div>
+</body>
+</html>

@@ -1118,11 +1118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\BuisnessLayer\\BuisnessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\BuisnessLayer\\BuisnessLayer.csproj",
       "projectName": "BuisnessLayer",
-      "projectPath": "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\BuisnessLayer\\BuisnessLayer.csproj",
+      "projectPath": "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\BuisnessLayer\\BuisnessLayer.csproj",
       "packagesPath": "C:\\Users\\DeepBlue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\BuisnessLayer\\obj\\",
+      "outputPath": "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\BuisnessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DeepBlue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1139,11 +1139,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\DAL\\DAL.csproj"
+            "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\Entities\\Entities.csproj"
+            "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\Entities\\Entities.csproj"
             }
           }
         }

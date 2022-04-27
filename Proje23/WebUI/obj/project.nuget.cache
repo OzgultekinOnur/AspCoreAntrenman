@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/pneSXP/mVzq/tZThYZow74J+iHJqE6zyrIGNYUmNMvd9xRo8wsTbE635RX88SvavAi+/b8tG0N+20Jxd1xdvQ==",
+  "dgSpecHash": "/TF5WQF5Qvg+AddeicyAIGta759C3BHi88j5lNylSo8QjmJzkJKZr2rhi/xVNGQ0HMvh1+iyE+FUpAmP4pXFjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DeepBlue\\source\\repos\\Proje23\\WebUI\\WebUI.csproj",
+  "projectFilePath": "C:\\Users\\DeepBlue\\Desktop\\Github\\AspCoreAntrenman\\Proje23\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DeepBlue\\.nuget\\packages\\htmlagilitypack\\1.11.42\\htmlagilitypack.1.11.42.nupkg.sha512",
     "C:\\Users\\DeepBlue\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
