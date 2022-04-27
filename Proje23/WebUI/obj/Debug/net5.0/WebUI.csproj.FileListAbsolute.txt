@@ -287,8 +287,6 @@ C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Home\Sinavlar.cshtml.g.cs
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Home\Sinavlarim.cshtml.g.cs
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Home\SinavOlustur.cshtml.g.cs
-C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Login\UserLogin.cshtml.g.cs
-C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Login\UserSignUp.cshtml.g.cs
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -303,3 +301,4 @@ C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\WebUI.pdb
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\WebUI.genruntimeconfig.cache
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\NewLogin\Index.cshtml.g.cs
+C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\SignUp\UserSignUp.cshtml.g.cs

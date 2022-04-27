@@ -14,11 +14,6 @@ namespace WebUI.Controllers
     {
         private UserManager usermanager = new UserManager();
 
-        public IActionResult UserLogin()
-        {
-            return View();
-        }
-
         [HttpPost]
         public IActionResult UserLogin(UserModel user)
         {
