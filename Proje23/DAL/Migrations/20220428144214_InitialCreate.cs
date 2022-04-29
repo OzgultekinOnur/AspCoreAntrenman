@@ -15,7 +15,8 @@ namespace DAL.Migrations
                     Username = table.Column<string>(type: "TEXT", nullable: true),
                     Password = table.Column<string>(type: "TEXT", nullable: true),
                     Email = table.Column<string>(type: "TEXT", nullable: true),
-                    Active = table.Column<string>(type: "TEXT", nullable: true)
+                    Active = table.Column<bool>(type: "INTEGER", nullable: false),
+                    ActivationCode = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

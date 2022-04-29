@@ -38,9 +38,8 @@ namespace DAL.Concrete.EntityDal
             db.SaveChanges();
         }
 
-        public void Update(Exam obje)
+        public void Update()
         {
-            throw new NotImplementedException();
         }
     }
 }

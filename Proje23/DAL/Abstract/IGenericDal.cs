@@ -12,7 +12,7 @@ namespace DAL.Abstract
 
         void Delete(int Id, string name);
 
-        void Update(T obje);
+        void Update();
 
         List<T> GetListAll();
 

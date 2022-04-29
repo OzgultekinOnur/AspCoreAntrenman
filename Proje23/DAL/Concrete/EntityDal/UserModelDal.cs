@@ -33,9 +33,9 @@ namespace DAL.Concrete.EntityDal
             db.SaveChanges();
         }
 
-        public void Update(UserModel obje)
+        public void Update()
         {
-            db.UserModels.Update(obje);
+            db.SaveChanges();
         }
     }
 }

@@ -12,7 +12,8 @@ namespace Entities.Concrete
         public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
-        public string Active { get; set; }
+        public bool Active { get; set; }
+        public string ActivationCode { get; set; }
         public List<Exam> Exams { get; set; }
     }
 }

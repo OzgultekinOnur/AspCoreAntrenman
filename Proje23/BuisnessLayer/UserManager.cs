@@ -10,6 +10,9 @@ namespace BuisnessLayer
 {
     public class UserManager
     {
+        private UserModelDal user = new UserModelDal();
+        private DtoDAL dto = new DtoDAL();
+
         public void KullaniciEkle(UserModel kullanici)
         {
             try
@@ -19,7 +22,6 @@ namespace BuisnessLayer
                 }
                 else
                 {
-                    UserModelDal user = new UserModelDal();
                     user.Insert(kullanici);
                 }
             }
@@ -33,7 +35,6 @@ namespace BuisnessLayer
         {
             try
             {
-                UserModelDal user = new UserModelDal();
                 return user.GetListAll();
             }
             catch (Exception)
@@ -47,7 +48,7 @@ namespace BuisnessLayer
         {
             try
             {
-                DtoDAL dto = new DtoDAL();
+                //DtoDAL dto = new DtoDAL();
                 dto.AddExamForUser(username, sinav);
             }
             catch (Exception)
@@ -60,8 +61,20 @@ namespace BuisnessLayer
         {
             try
             {
-                DtoDAL dto = new DtoDAL();
+                //DtoDAL dto = new DtoDAL();
                 return dto.UserSinavlari(username);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void KullaniciGuncelle()
+        {
+            try
+            {
+                user.Update();
             }
             catch (Exception)
             {
