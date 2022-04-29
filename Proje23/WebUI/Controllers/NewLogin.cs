@@ -84,14 +84,13 @@ namespace WebUI.Controllers
             {
                 usertest.Active = true;
                 usermanager.KullaniciGuncelle();
-                ViewBag.message = "Registration Successful";
+                return View("Congrats");
             }
             else
             {
                 ViewBag.message = "That is Wrong Code ! ";
                 return View();
             }
-            return View();
         }
 
         [HttpGet]
@@ -100,12 +99,13 @@ namespace WebUI.Controllers
             return View();
         }
 
-        [HttpPost]
         public IActionResult ActivationCodeSend(UserModel user)
         {
-            user.ActivationCode = SendMail(user.Email);
+            var usertest = usermanager.KullaniciAra().FirstOrDefault(w => w.Username == HttpContext.Session.GetString("uye").ToString());
+            usertest.ActivationCode = SendMail(usertest.Email);
+            usermanager.KullaniciGuncelle();
             ViewBag.ActivCodeSended = "Your new Activation code has been sent to your e-mail address.";
-            return View("Index2", user);
+            return RedirectToAction("Index2", "NewLogin");
         }
 
         public IActionResult Quit()
@@ -113,6 +113,11 @@ namespace WebUI.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "NewLogin");
             //Kullanıcının Sınavını Silme isteği
+        }
+
+        public IActionResult Congrats()
+        {
+            return View();
         }
 
         #region UserInfControl
