@@ -301,6 +301,5 @@ C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\WebUI.pdb
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\WebUI.genruntimeconfig.cache
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\NewLogin\Index.cshtml.g.cs
-C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\Login\UserSignUp.cshtml.g.cs
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\NewLogin\Index1.cshtml.g.cs
 C:\Users\DeepBlue\Desktop\Github\AspCoreAntrenman\Proje23\WebUI\obj\Debug\net5.0\Razor\Views\NewLogin\Index2.cshtml.g.cs

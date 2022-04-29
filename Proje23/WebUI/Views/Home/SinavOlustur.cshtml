@@ -7,7 +7,7 @@
 <div class=" d-flex justify-content-center mt-4">
     <form asp-action="SinavOlustur">
         <div class="form-group">
-            <label asp-for="Basliklar" class="control-label"> </label>
+            @*<label asp-for="Basliklar" class="control-label"> </label>*@
             <select id="select1" asp-for="Basliklar">
                 @foreach (var item in Model.Basliklar)
                 {

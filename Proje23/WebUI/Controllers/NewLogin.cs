@@ -100,6 +100,21 @@ namespace WebUI.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult ActivationCodeSend(UserModel user)
+        {
+            user.ActivationCode = SendMail(user.Email);
+            ViewBag.ActivCodeSended = "Your new Activation code has been sent to your e-mail address.";
+            return View("Index2", user);
+        }
+
+        public IActionResult Quit()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "NewLogin");
+            //Kullanıcının Sınavını Silme isteği
+        }
+
         #region UserInfControl
 
         public bool PwControl(UserModel usercontrol)
