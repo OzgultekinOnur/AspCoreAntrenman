@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class=" d-flex justify-content-center mt-4">
+<div class=" mt-4">
     <form asp-action="SinavOlustur">
         <div class="form-group">
             @*<label asp-for="Basliklar" class="control-label"> </label>*@
@@ -24,7 +24,7 @@
     <div class="col-md-12">
         <form action="">
             <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>
+                <textarea class="form-control text-dark" id="exampleFormControlTextarea1" rows="3" readonly>
                     @Model.GeriDonenMetin
                 </textarea>
             </div>
@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-md-2">
                 <label for="" class="mt-3">Doğru Cevap</label>
-                <div class=" d-flex justify-content-center ">
+                <div class=" ">
                     <select asp-for="Sinav.Q1Correct1">
                         <option>
                             A

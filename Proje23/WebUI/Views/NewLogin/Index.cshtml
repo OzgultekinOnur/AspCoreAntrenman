@@ -36,40 +36,47 @@
 
     <!-- Page Content -->
     <div class="container">
-        <div class="row">
-            <div class=" col-md-6 text-center">
+        <div class="row mt-2">
+            <div class=" col-md-4 text-center">
                 <div class="row">
                     <div class="col-md-12"><img src="/img/Logox.png" alt="" class="w-50"></div>
                     <div class="col-md-12">
                         <h1 class='text-white'>Konuşarak Öğren</h1>
                     </div>
                 </div>
-                <form action="/NewLogin/Index" method="post">
-                    <div class="form-login">
-                        </br>
-                        <h2>Login</h2>
-                        </br>
-                        <input type="text" id="userName" class="form-control input- chat-input" placeholder="Username"
-                               asp-for="Username" />
-                        </br></br>
-                        <input type="password" id="userPassword" class="form-control input-md chat-input"
-                               placeholder="Password" asp-for="Password" />
-                        </br></br>
-                        <div class="wrapper">
-                            <span class="group-btn">
-                                <button class="btn btn-primary btn-lg" type="submit">
-                                    Login <i class="fa fa-sign-in"></i>
-                                </button>
-                            </span>
-                        </div>
-                        <div>@ViewBag.LoginMessage</div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="/NewLogin/Index" method="post">
+                            <div class="form-login">
+                                </br>
+                                <h2>Login</h2>
+                                </br>
+                                <input type="text" id="userName" class="form-control input- chat-input" placeholder="Username"
+                                       asp-for="Username" />
+                                </br></br>
+                                <input type="password" id="userPassword" class="form-control input-md chat-input"
+                                       placeholder="Password" asp-for="Password" />
+                                </br></br>
+                                <div class="wrapper">
+                                    <span class="group-btn">
+                                        <button class="btn btn-primary btn-lg" type="submit">
+                                            Login <i class="fa fa-sign-in"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div>@ViewBag.LoginMessage</div>
+                            </div>
+                        </form>
                     </div>
-                </form>
-                <div><a class="btn btn-lg text-light" asp-controller="NewLogin" asp-action="Index1"> SignUp</a></div>
+                </div>
+
+                <a class="btn btn-lg text-light" asp-controller="NewLogin" asp-action="Index1"> SignUp</a>
             </div>
         </div>
-        <div class="mt-5 row">
-            <div class=" col-md-6 text-center">
+        </br></br></br>
+
+        <div class="footer d-block ">
+            <div class=" col-md-12 text-center">
                 <div class="footer text-white text-center">
                     <p>
                         © 2020 Unique Login Form. All rights reserved | Design by <a href="https://freecss.tech">
@@ -81,10 +88,6 @@
             </div>
             <div class=" col-md-6 text-center"></div>
         </div>
-        </br></br></br>
-
-        <!--footer-->
-        <!--//footer-->
     </div>
 </body>
 </html>

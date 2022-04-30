@@ -25,7 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\loginstyle.css" />
     <None Include="wwwroot\img\logo.jfif" />
     <None Include="wwwroot\img\navbarlogo.jpg" />
   </ItemGroup>
