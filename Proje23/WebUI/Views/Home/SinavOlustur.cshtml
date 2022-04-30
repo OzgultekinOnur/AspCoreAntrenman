@@ -4,16 +4,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class=" mt-4">
+<div class="row mt-4">
     <form asp-action="SinavOlustur">
-        <div class="form-group">
-            @*<label asp-for="Basliklar" class="control-label"> </label>*@
-            <select id="select1" asp-for="Basliklar">
-                @foreach (var item in Model.Basliklar)
-                {
-                    <option>@item</option>
-                }
-            </select>
+        <div class="col-md-12">
+            <div class="form-group">
+
+                <select id="select1" asp-for="Basliklar" style="text-align:center; justify-items:center ">
+                    @foreach (var item in Model.Basliklar)
+                    {
+                        <option>@item</option>
+                    }
+                </select>
+            </div>
         </div>
         <div>
             <input type="submit" class="btn btn-lg" value="Konuyu Seç" />
@@ -84,7 +86,7 @@
     </div>  @* Soru1 *@
     <div>
         <div class="row my-2">
-            <div class="col-md-12">
+            <div class="col-md-12 ">
                 <label for="">Soru-1</label>
                 <input class="form-control" type="text" placeholder="Question" asp-for="Sinav.Question2">
             </div>
