@@ -60,7 +60,7 @@
                         @Context.Session.GetString("uye")
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item nav-link">Profile</a>
+                        <a class="dropdown-item nav-link" asp-controller="Profile" asp-action="Index">Profile</a>
                         <a class="dropdown-item nav-link" asp-controller="Home" asp-action="SinavOlustur">Sınav Oluştur</a>
                         <a class="dropdown-item nav-link" asp-controller="Home" asp-action="Sinavlarim">Sınavlarım</a>
                         <a class="dropdown-item nav-link" asp-controller="NewLogin" asp-action="Quit">Çıkış Yap</a>

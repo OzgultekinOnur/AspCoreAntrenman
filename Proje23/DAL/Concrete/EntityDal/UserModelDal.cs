@@ -34,9 +34,9 @@ namespace DAL.Concrete.EntityDal
             await db.SaveChangesAsync();
         }
 
-        public async Task Updatex() //Düzenlendi
+        public void Updatex() //Düzenlendi
         {
-            await db.SaveChangesAsync();
+            db.SaveChangesAsync();
         }
     }
 }

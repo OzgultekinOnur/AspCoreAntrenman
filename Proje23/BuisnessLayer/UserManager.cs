@@ -70,11 +70,11 @@ namespace BuisnessLayer
             }
         }
 
-        public async Task KullaniciGuncelle()
+        public void KullaniciGuncelle()
         {
             try
             {
-                await user.Updatex();
+                user.Updatex();
             }
             catch (Exception)
             {

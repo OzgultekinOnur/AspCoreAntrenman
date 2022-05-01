@@ -124,11 +124,41 @@ namespace DAL.Migrations
                     b.Property<bool>("Active")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Age")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EnglishLevel")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ExamCreated")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Experience")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Gender")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Password")
                         .HasColumnType("TEXT");
+
+                    b.Property<string>("Profession")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("QuestionAnswered")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("Ranks")
+                        .HasColumnType("REAL");
+
+                    b.Property<int>("TookTheExam")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Username")
                         .HasColumnType("TEXT");

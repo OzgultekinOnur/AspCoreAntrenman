@@ -13,7 +13,7 @@ namespace DAL.Abstract
 
         public Task Deletex(int Id, string name);
 
-        public Task Updatex();
+        public void Updatex();
 
         public List<T> GetListAllx();
 
