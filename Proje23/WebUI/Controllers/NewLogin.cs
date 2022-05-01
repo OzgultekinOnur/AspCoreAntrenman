@@ -83,7 +83,7 @@ namespace WebUI.Controllers
             if (user.ActivationCode.Trim() == usertest.ActivationCode.Trim())
             {
                 usertest.Active = true;
-                usermanager.KullaniciGuncelle();
+                usermanager.KullaniciGuncelle(usertest);
                 return View("Congrats");
             }
             else
@@ -103,7 +103,7 @@ namespace WebUI.Controllers
         {
             var usertest = usermanager.KullaniciAra().FirstOrDefault(w => w.Username == HttpContext.Session.GetString("uye").ToString());
             usertest.ActivationCode = SendMail(usertest.Email);
-            usermanager.KullaniciGuncelle();
+            usermanager.KullaniciGuncelle(usertest);
             ViewBag.ActivCodeSended = "Your new Activation code has been sent to your e-mail address.";
             return RedirectToAction("Index2", "NewLogin");
         }

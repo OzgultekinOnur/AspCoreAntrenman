@@ -2,7 +2,7 @@
 
 namespace DAL.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class NewUpdate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -43,5 +43,10 @@ namespace DAL.Concrete.EntityDal
         {
             throw new NotImplementedException();
         }
+
+        public void Updatex(Exam obje)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -70,11 +70,11 @@ namespace BuisnessLayer
             }
         }
 
-        public void KullaniciGuncelle()
+        public void KullaniciGuncelle(UserModel model)
         {
             try
             {
-                user.Updatex();
+                user.Updatex(model);
             }
             catch (Exception)
             {

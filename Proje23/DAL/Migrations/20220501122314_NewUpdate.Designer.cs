@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220501120815_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220501122314_NewUpdate")]
+    partial class NewUpdate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

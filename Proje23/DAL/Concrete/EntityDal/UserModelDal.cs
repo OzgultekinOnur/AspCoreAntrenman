@@ -34,9 +34,10 @@ namespace DAL.Concrete.EntityDal
             await db.SaveChangesAsync();
         }
 
-        public void Updatex() //Düzenlendi
+        public void Updatex(UserModel obje) //Düzenlendi
         {
-            db.SaveChangesAsync();
+            db.Update(obje);
+            db.SaveChanges();
         }
     }
 }
