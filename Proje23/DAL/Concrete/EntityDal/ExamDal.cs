@@ -39,7 +39,7 @@ namespace DAL.Concrete.EntityDal
             await db.SaveChangesAsync();
         }
 
-        public Task Updatex()
+        public void Updatex()
         {
             throw new NotImplementedException();
         }
