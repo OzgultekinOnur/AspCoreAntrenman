@@ -44,12 +44,12 @@ namespace BuisnessLayer
         }
 
         //-- Kullanıcının İlişkisel Bağlantıları
-        public void KullanıcıyaSınavEkle(string username, Exam sinav)
+        public async Task KullanıcıyaSınavEkle(string username, Exam sinav)
         {
             try
             {
                 //DtoDAL dto = new DtoDAL();
-                dto.AddExamForUser(username, sinav);
+                await dto.AddExamForUserx(username, sinav);
             }
             catch (Exception)
             {
@@ -62,7 +62,7 @@ namespace BuisnessLayer
             try
             {
                 //DtoDAL dto = new DtoDAL();
-                return dto.UserSinavlari(username);
+                return dto.UserSinavlarix(username);
             }
             catch (Exception)
             {

@@ -97,13 +97,13 @@ namespace WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Olustur(TextModel model)
+        public async Task<IActionResult> Olustur(TextModel model)
         {
             model.Sinav.Text2 = UsernameTp.Konu;
             model.Sinav.Text = UsernameTp.Baslik;
             model.Sinav.Date = DateTime.Now.ToString("dddd, dd MMMM yyyy");
             userManager = new UserManager();
-            userManager.KullanıcıyaSınavEkle(UsernameTp.Username.ToString(), model.Sinav);
+            await userManager.KullanıcıyaSınavEkle(UsernameTp.Username.ToString(), model.Sinav);
             return RedirectToAction("Sinavlarim", "Home");
             //DTO ya bağladığım Kısım
         }

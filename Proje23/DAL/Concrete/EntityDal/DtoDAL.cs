@@ -1,4 +1,5 @@
 ﻿using Entities.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,22 +14,21 @@ namespace DAL.Concrete.EntityDal
         private UserModel kullanici;
         private ExamDal exam;
 
-        public void AddExamForUser(string username, Exam sinav)
+        public async Task AddExamForUserx(string username, Exam sinav)
         {
             //gönderilen isim ve sınavı o isme sahip kullanıcının sınavlarına ekledim
             kullanici = new UserModel();
-            kullanici = db.UserModels.FirstOrDefault(x => x.Username == username);
+            kullanici = db.UserModels.AsNoTracking().FirstOrDefault(x => x.Username == username);
             sinav.UserModelId = kullanici.Id;
-            db.Exams.Add(sinav);
-            db.SaveChanges();
+            await db.Exams.AddAsync(sinav);
+            await db.SaveChangesAsync();
         }
 
-        public List<Exam> UserSinavlari(string username)
+        public List<Exam> UserSinavlarix(string username)
         {
             // kullanıcının ürettiği sınavları o kullanıcının Id sini alarak döndürdüğüm liste
             exam = new ExamDal();
-
-            UserModel kullanici = db.UserModels.FirstOrDefault(x => x.Username == username);
+            UserModel kullanici = db.UserModels.AsNoTracking().FirstOrDefault(x => x.Username == username);
             return exam.GetListAllx().Where(y => y.UserModelId == kullanici.Id).ToList();
         }
     }
