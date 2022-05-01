@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
-    public class Exam
+    public class Exam : BaseEntity
     {
-        public int Id { get; set; }
         public string Text { get; set; }
         public string Text2 { get; set; }
         public string Question1 { get; set; }

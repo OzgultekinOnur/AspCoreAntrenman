@@ -13,7 +13,7 @@ namespace BuisnessLayer
         private UserModelDal user = new UserModelDal();
         private DtoDAL dto = new DtoDAL();
 
-        public void KullaniciEkle(UserModel kullanici)
+        public async Task KullaniciEklex(UserModel kullanici)
         {
             try
             {
@@ -22,7 +22,7 @@ namespace BuisnessLayer
                 }
                 else
                 {
-                    user.Insert(kullanici);
+                    await user.Insertx(kullanici);
                 }
             }
             catch (ArgumentException)
@@ -35,7 +35,7 @@ namespace BuisnessLayer
         {
             try
             {
-                return user.GetListAll();
+                return user.GetListAllx();
             }
             catch (Exception)
             {
@@ -70,11 +70,11 @@ namespace BuisnessLayer
             }
         }
 
-        public void KullaniciGuncelle()
+        public async Task KullaniciGuncelle()
         {
             try
             {
-                user.Update();
+                await user.Updatex();
             }
             catch (Exception)
             {

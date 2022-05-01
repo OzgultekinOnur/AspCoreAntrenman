@@ -12,13 +12,12 @@ namespace BuisnessLayer
     {
         private ExamDal exam;
 
-        public void SinavEkle(Exam sinav)
+        public async Task SinavEklex(Exam sinav) // düzenli
         {
             try
             {
                 exam = new ExamDal();
-
-                exam.Insert(sinav);
+                await exam.Insertx(sinav);
             }
             catch (Exception)
             {
@@ -26,13 +25,13 @@ namespace BuisnessLayer
             }
         }
 
-        public List<Exam> SinavListesi()
+        public List<Exam> SinavListesi() // Düzenlendi
         {
             try
             {
                 exam = new ExamDal();
 
-                return exam.GetListAll();
+                return exam.GetListAllx();
             }
             catch (Exception)
             {
@@ -40,12 +39,12 @@ namespace BuisnessLayer
             }
         }
 
-        public void SilinecekSınav(int examId, string Username)
+        public async Task SilinecekSınavx(int examId, string name) //düzenlendi
         {
             try
             {
                 exam = new ExamDal();
-                exam.Delete(examId, Username);
+                await exam.Deletex(examId, name);
             }
             catch (Exception)
             {

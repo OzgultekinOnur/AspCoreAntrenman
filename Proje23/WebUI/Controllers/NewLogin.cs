@@ -52,7 +52,7 @@ namespace WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index1(UserModel user)
+        public async Task<IActionResult> Index1(UserModel user)
         {
             if (UserInformation(user))
             {
@@ -61,7 +61,7 @@ namespace WebUI.Controllers
                 {
                     user.Active = false;
                     user.ActivationCode = SendMail(user.Email);
-                    usermanager.KullaniciEkle(user);
+                    await usermanager.KullaniciEklex(user);
                     HttpContext.Session.SetString("uye", user.Username);
 
                     return View("Index2");

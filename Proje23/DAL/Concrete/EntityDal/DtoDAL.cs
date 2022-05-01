@@ -29,7 +29,7 @@ namespace DAL.Concrete.EntityDal
             exam = new ExamDal();
 
             UserModel kullanici = db.UserModels.FirstOrDefault(x => x.Username == username);
-            return exam.GetListAll().Where(y => y.UserModelId == kullanici.Id).ToList();
+            return exam.GetListAllx().Where(y => y.UserModelId == kullanici.Id).ToList();
         }
     }
 }

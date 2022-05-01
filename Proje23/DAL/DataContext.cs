@@ -11,10 +11,6 @@ namespace DAL
 {
     public class DataContext : DbContext
     {
-        public DataContext()
-        {
-        }
-
         public DbSet<Exam> Exams { get; set; }
         public DbSet<UserModel> UserModels { get; set; }
 

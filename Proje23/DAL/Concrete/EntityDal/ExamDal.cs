@@ -1,5 +1,6 @@
 ﻿using DAL.Abstract;
 using Entities.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,34 +13,35 @@ namespace DAL.Concrete.EntityDal
     {
         private DataContext db = new DataContext();
 
-        public void Delete(int examId, string Username)
+        public async Task Deletex(int examId, string name)  // Düzenli Hali
         {
-            var kullanici = db.UserModels.FirstOrDefault(w => w.Username == Username);
+            var kullanici = db.UserModels.FirstOrDefault(w => w.Username == name);
             int kullaniciId = kullanici.Id;
             var Sınavları = db.Exams.Where(r => r.UserModelId == kullanici.Id);
             var silinecek = Sınavları.FirstOrDefault(w => w.Id == examId);
             db.Remove(silinecek);
-            db.SaveChanges();
+            await db.SaveChangesAsync();
         }
 
-        public Exam GetByID(int id)
+        public Task<Exam> GetByIdx(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Exam> GetListAll()
+        public List<Exam> GetListAllx() // Düzenlendi
         {
-            return db.Exams.ToList();
+            return db.Exams.AsNoTracking().ToList();
         }
 
-        public void Insert(Exam obje)
+        public async Task Insertx(Exam obje) // düzenlendi
         {
-            db.Exams.Add(obje);
-            db.SaveChanges();
+            await db.Exams.AddAsync(obje);
+            await db.SaveChangesAsync();
         }
 
-        public void Update()
+        public Task Updatex()
         {
+            throw new NotImplementedException();
         }
     }
 }

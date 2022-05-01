@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,14 @@ namespace DAL.Abstract
 {
     public interface IGenericDal<T> where T : class
     {
-        void Insert(T obje);
+        public Task Insertx(T obje);
 
-        void Delete(int Id, string name);
+        public Task Deletex(int Id, string name);
 
-        void Update();
+        public Task Updatex();
 
-        List<T> GetListAll();
+        public List<T> GetListAllx();
 
-        T GetByID(int id);
+        public Task<T> GetByIdx(int Id);
     }
 }

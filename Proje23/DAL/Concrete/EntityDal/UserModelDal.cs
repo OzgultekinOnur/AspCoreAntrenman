@@ -1,5 +1,6 @@
 ﻿using DAL.Abstract;
 using Entities.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,30 +13,30 @@ namespace DAL.Concrete.EntityDal
     {
         private DataContext db = new DataContext();
 
-        public void Delete(int Id, string name)
+        public Task Deletex(int Id, string name)
         {
+            throw new NotImplementedException();
         }
 
-        public UserModel GetByID(int id)
+        public async Task<UserModel> GetByIdx(int Id)
         {
-            var model = db.UserModels.Where(r => r.Id == id);
-            return (UserModel)model;
+            return await db.UserModels.AsNoTracking().FirstOrDefaultAsync(r => r.Id == Id);
         }
 
-        public List<UserModel> GetListAll()
+        public List<UserModel> GetListAllx() //Düzenlendi
         {
-            return db.UserModels.ToList();
+            return db.UserModels.AsNoTracking().ToList();
         }
 
-        public void Insert(UserModel obje)
+        public async Task Insertx(UserModel obje) // düzenlendi
         {
-            db.UserModels.Add(obje);
-            db.SaveChanges();
+            await db.UserModels.AddAsync(obje);
+            await db.SaveChangesAsync();
         }
 
-        public void Update()
+        public async Task Updatex() //Düzenlendi
         {
-            db.SaveChanges();
+            await db.SaveChangesAsync();
         }
     }
 }

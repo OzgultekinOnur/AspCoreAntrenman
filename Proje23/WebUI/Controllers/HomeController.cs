@@ -115,11 +115,11 @@ namespace WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult SinavSil(IFormCollection datas)
+        public async Task<IActionResult> SinavSil(IFormCollection datas)
         {
             int id = int.Parse(datas.Keys.ToList()[0]);
             examManager = new ExamManager();
-            examManager.SilinecekSınav(id, UsernameTp.Username);
+            await examManager.SilinecekSınavx(id, UsernameTp.Username);
             return RedirectToAction("Sinavlarim", "Home");
             //Kullanıcının Sınavını Silme isteği
         }
