@@ -36,6 +36,8 @@ namespace WebUI.Controllers
                 else
                 {
                     HttpContext.Session.SetString("uye", Anyuser.Username);
+                    Anyuser.ActivationCode = SendMail(Anyuser.Email);
+                    usermanager.KullaniciGuncelle(Anyuser);
                     return View("Index2", user);
                 }
             }
@@ -120,6 +122,44 @@ namespace WebUI.Controllers
             return View();
         }
 
+        public IActionResult Index3()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index3(string email)
+        {
+            var user = usermanager.KullaniciAra().FirstOrDefault(w => w.Email.Trim() == email.Trim() && w.Active == false);
+            if (user != null)
+            {
+                user.Password = SendMail2(user.Email, user.Username);
+                usermanager.KullaniciGuncelle(user);
+                ViewBag.Sended = "Temporary password has been sent";
+            }
+            else
+                ViewBag.Sended = "This e-mail address does not exist";
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Code(string email)
+        {
+            var user = usermanager.KullaniciAra().FirstOrDefault(w => w.Username.Trim() == HttpContext.Session.GetString("uye").ToString() && w.Active == false);
+            if (user != null)
+            {
+                user.ActivationCode = SendMail(user.Email);
+                usermanager.KullaniciGuncelle(user);
+                ViewBag.Sended = "Activation code has been sent";
+                return View("Index2", user);
+            }
+            else
+                ViewBag.Sended = "This e-mail address does not exist";
+
+            return View("Index2");
+        }
+
         #region UserInfControl
 
         public bool PwControl(UserModel usercontrol)
@@ -193,6 +233,28 @@ namespace WebUI.Controllers
             mesajım.From = new MailAddress("messagebykonogr@outlook.com");
             mesajım.Subject = "Activation Code";
             mesajım.Body = "Activation Code: " + randommessage;
+            istemci.Send(mesajım);
+            return randommessage;
+        }
+
+        public string SendMail2(string kime, string username)
+        {
+            Random rnd = new Random();
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            string randommessage = new string(Enumerable.Repeat(chars, 7)
+                .Select(s => s[rnd.Next(s.Length)]).ToArray());
+            MailMessage mesajım = new MailMessage();
+            SmtpClient istemci = new SmtpClient();
+            istemci.Credentials = new System.Net.NetworkCredential("messagebykonogr@outlook.com", "so211297");
+            istemci.Port = 587;
+            istemci.Host = "smtp-mail.outlook.com";
+            istemci.EnableSsl = true;
+            //mesajım.Attachments.Add(new Attachment(@"C:\deneme-upload.jpg"));
+            mesajım.To.Add(kime);
+            mesajım.From = new MailAddress("messagebykonogr@outlook.com");
+            mesajım.Subject = "Hey " + username + " New Password is here ";
+            mesajım.Body = "New Password: " + randommessage
+                + "\n ";
             istemci.Send(mesajım);
             return randommessage;
         }
