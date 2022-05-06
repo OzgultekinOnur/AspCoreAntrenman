@@ -15,9 +15,8 @@ namespace WebUI
         public static void Main(string[] args)
         {
             if (!Directory.Exists("C:\\ProjeDB"))
-            {
                 Directory.CreateDirectory("C:\\ProjeDB");
-            }
+            
 
             CreateHostBuilder(args).Build().Run();
         }

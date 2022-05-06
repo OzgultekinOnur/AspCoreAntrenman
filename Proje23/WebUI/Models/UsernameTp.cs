@@ -106,6 +106,7 @@ namespace WebUI.Models
 
             if (soru1 == cevap1)
                 model.Yesil1 = cevap1;
+            
             else
                 model.Kirmizi1 = cevap1;
 

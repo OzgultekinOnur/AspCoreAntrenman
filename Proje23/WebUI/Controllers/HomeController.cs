@@ -78,6 +78,12 @@ namespace WebUI.Controllers
 
         public IActionResult Sonuc(string options, string options1, string options2, string options3)
         {
+            userManager = new UserManager();
+            var user =    userManager.KullaniciAra().FirstOrDefault(w=>w.Username==UsernameTp.Username);
+            user.TookTheExam += 1;
+            user.QuestionAnswered += 4;
+            user.Ranks += 0.01;
+            userManager.KullaniciGuncelle(user);
             examManager = new ExamManager();
             var sinav = examManager.SinavListesi().FirstOrDefault(w => w.Id == UsernameTp.SinavId);
             wmodel.Sinav = sinav;
@@ -88,6 +94,7 @@ namespace WebUI.Controllers
         [HttpPost]
         public IActionResult SinavOlustur(TextModel model)
         {
+           
             int index = wmodel.Basliklar.IndexOf(model.Basliklar[0]);
             model.GeriDonenMetin = model.Metinler[index].ToString();
             UsernameTp.Baslik = model.Basliklar[0];
@@ -104,6 +111,10 @@ namespace WebUI.Controllers
             model.Sinav.Date = DateTime.Now.ToString("dddd, dd MMMM yyyy");
             userManager = new UserManager();
             await userManager.KullanıcıyaSınavEkle(UsernameTp.Username.ToString(), model.Sinav);
+            var user = userManager.KullaniciAra().FirstOrDefault(w => w.Username == UsernameTp.Username.ToString());
+            user.ExamCreated += 1;
+            user.Ranks += 0.03;
+            userManager.KullaniciGuncelle(user);
             return RedirectToAction("Sinavlarim", "Home");
             //DTO ya bağladığım Kısım
         }

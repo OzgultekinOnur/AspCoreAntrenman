@@ -20,7 +20,7 @@ namespace DAL
             wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[1]/section/div[2]/div[2]/div[1]/div[2]/div[2]"));
             wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[3]/div/div/div[2]/div[2]/div[3]"));
             wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[6]/div/div/div[2]/div[2]/div[3]"));
-            wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[8]/div/div/div[2]/div[2]/div[3]"));
+          
             wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[10]/div/div/div[2]/div[2]/div[3]"));
             return wired;
         }
@@ -31,7 +31,6 @@ namespace DAL
             wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[1]/section/div[2]/div[2]/div[1]/div[2]/a/h2"));
             wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[3]/div/div/div[2]/div[2]/a/h3"));
             wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[6]/div/div/div[2]/div[2]/a/h3"));
-            wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[8]/div/div/div[2]/div[2]/a/h3"));
             wired.Add(VeriAl("https://www.wired.com/", "//*[@id='main-content']/div[1]/div[10]/div/div/div[2]/div[2]/a/h3"));
             return wired;
         }
