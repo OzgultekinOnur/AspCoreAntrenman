@@ -13,7 +13,7 @@
         <h5 class="border blockquote text-center p-4 "> @Model.Sinav.Text2</h5>
     </div>
 </div>
-<form asp-controller="Home" asp-action="Sonuc">
+<form asp-controller="Home" asp-action="Sonuc" class="ortala">
     <div class="row mt-5">
         <div class="col-md-12">
             <p class="border blockquote text-center p-4 ">
@@ -23,21 +23,21 @@
     </div>
     <div class="row my-2">
         <div class="col-md-6 ">
-            <input type="radio" class="btn-check btn-block" name="options" id="option1" value="b11" />
+            <input type="radio" class="btn-check btn-block" name="options" id="option1" value="b11" hidden/>
             <label class="btn border btn-block" id="b11" for="option1">@Model.Sinav.Question1Answers1.ToString()</label>
         </div>
         <div class="col-md-6">
-            <input type="radio" class="btn-check btn-block" name="options" id="option2" value="b12" />
+            <input type="radio" class="btn-check btn-block" name="options" id="option2" value="b12" hidden/>
             <label class="btn border btn-block" id="b12" for="option2">@Model.Sinav.Question1Answers2.ToString()</label>
         </div>
     </div>
     <div class="row my-2">
         <div class="col-md-6 ">
-            <input type="radio" class="btn-check btn-block" name="options" id="option3" value="b13" />
+            <input type="radio" class="btn-check btn-block" name="options" id="option3" value="b13" hidden/>
             <label class="btn border btn-block " id="b13" for="option3">@Model.Sinav.Question1Answers3.ToString()</label>
         </div>
         <div class="col-md-6">
-            <input type="radio" class="btn-check " name="options" id="option4" value="b14" />
+            <input type="radio" class="btn-check " name="options" id="option4" value="b14" hidden/>
             <label class="btn border btn-block" id="b14" for="option4">@Model.Sinav.Question1Answers4.ToString()</label>
         </div>
     </div>
@@ -50,21 +50,21 @@
     </div>
     <div class="row my-2">
         <div class="col-md-6 ">
-            <input type="radio" class="btn-check btn-block" name="options1" id="option5" value="b21" />
+            <input type="radio" class="btn-check btn-block" name="options1" id="option5" value="b21" hidden/>
             <label class="btn border btn-block" id="b21" for="option5">@Model.Sinav.Question2Answers1.ToString()</label>
         </div>
         <div class="col-md-6">
-            <input type="radio" class="btn-check btn-block" name="options1" id="option6" value="b22" />
+            <input type="radio" class="btn-check btn-block" name="options1" id="option6" value="b22" hidden />
             <label class="btn border btn-block" id="b22" for="option6">@Model.Sinav.Question2Answers2.ToString()</label>
         </div>
     </div>
     <div class="row my-2">
         <div class="col-md-6 ">
-            <input type="radio" class="btn-check btn-block" name="options1" id="option7" value="b23" />
+            <input type="radio" class="btn-check btn-block" name="options1" id="option7" value="b23" hidden />
             <label class="btn border btn-block " id="b23" for="option7">@Model.Sinav.Question2Answers3.ToString()</label>
         </div>
         <div class="col-md-6">
-            <input type="radio" class="btn-check " name="options1" id="option8" value="b24" />
+            <input type="radio" class="btn-check " name="options1" id="option8" value="b24" hidden/>
             <label class="btn border btn-block" id="b24" for="option8">@Model.Sinav.Question2Answers4.ToString()</label>
         </div>
     </div>
@@ -77,21 +77,21 @@
     </div>
     <div class="row my-2">
         <div class="col-md-6 ">
-            <input type="radio" class="btn-check btn-block" name="options2" id="option9" value="b31" />
+            <input type="radio" class="btn-check btn-block" name="options2" id="option9" value="b31" hidden />
             <label class="btn border btn-block" id="b31" for="option9">@Model.Sinav.Question3Answers1.ToString()</label>
         </div>
         <div class="col-md-6">
-            <input type="radio" class="btn-check btn-block" name="options2" id="option10" value="b32" />
+            <input type="radio" class="btn-check btn-block" name="options2" id="option10" value="b32" hidden/>
             <label class="btn border btn-block" id="b32" for="option10">@Model.Sinav.Question3Answers2.ToString()</label>
         </div>
     </div>
     <div class="row my-2">
         <div class="col-md-6 ">
-            <input type="radio" class="btn-check btn-block" name="options2" id="option11" value="b33" />
+            <input type="radio" class="btn-check btn-block" name="options2" id="option11" value="b33" hidden/>
             <label class="btn border btn-block " id="b33" for="option11">@Model.Sinav.Question3Answers3.ToString()</label>
         </div>
         <div class="col-md-6">
-            <input type="radio" class="btn-check " name="options2" id="option12" value="b34" />
+            <input type="radio" class="btn-check " name="options2" id="option12" value="b34" hidden/>
             <label class="btn border btn-block" id="b34" for="option12">@Model.Sinav.Question3Answers4.ToString()</label>
         </div>
     </div>
@@ -104,25 +104,29 @@
     </div>
     <div class="row my-2">
         <div class="col-md-6 ">
-            <input type="radio" class="btn-check btn-block" name="options3" id="option13" value="b41" />
+            <input type="radio" class="btn-check btn-block" name="options3" id="option13" value="b41" hidden/>
             <label class="btn border btn-block" id="b41" for="option13">@Model.Sinav.Question4Answers1.ToString()</label>
         </div>
         <div class="col-md-6">
-            <input type="radio" class="btn-check btn-block" name="options3" id="option14" value="b42" />
+            <input type="radio" class="btn-check btn-block" name="options3" id="option14" value="b42" hidden/>
             <label class="btn border btn-block" id="b42" for="option14">@Model.Sinav.Question4Answers2.ToString()</label>
         </div>
     </div>
     <div class="row my-2">
         <div class="col-md-6 ">
-            <input type="radio" class="btn-check btn-block" name="options3" id="option15" value="b43" />
+            <input type="radio" class="btn-check btn-block" name="options3" id="option15" value="b43" hidden />
             <label class="btn border btn-block " id="b43" for="option15">@Model.Sinav.Question4Answers3.ToString()</label>
         </div>
         <div class="col-md-6">
-            <input type="radio" class="btn-check " name="options3" id="option16" value="b44" />
+            <input type="radio" class="btn-check " name="options3" id="option16" value="b44" hidden/>
             <label class="btn border btn-block" id="b44" for="option16">@Model.Sinav.Question4Answers4.ToString()</label>
         </div>
     </div>
-    <button id="gonder">GÖNDER</button>
+    <div class="row my-2 "> 
+        <div class="col-md-2 ortala">    <button id="gonder" class="btn btn-success btn-lg">GÖNDER</button></div>
+
+    </div>
+   
 </form>
 
 <script>
